@@ -194,7 +194,7 @@ static const UIEdgeInsets NYTPhotosViewControllerCloseButtonImageInsets = {3, 0,
     closeButton.layer.shadowRadius = 1.0;
     closeButton.layer.shadowOpacity = 0.5;
     closeButton.layer.shadowColor = [UIColor blackColor].CGColor;
-    closeButton.tintColor = [UIColor whiteColor];
+    closeButton.imageView.tintColor = [UIColor whiteColor];
     
     _overlayView.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:closeButton];
     [closeButton addTarget:self action:@selector(doneButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
